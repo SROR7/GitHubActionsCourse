@@ -1,3 +1,6 @@
+#!/bin/bash
+
+#sec/test.sh
 EXPECTED = "hello, test!"
 
 OUTPUT=$(node -e "console.log(require('./src/app')('test'))")

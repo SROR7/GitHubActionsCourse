@@ -1,0 +1,9 @@
+on: 
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy_application 
+        run: echo "Depoying from the manual file application!" 

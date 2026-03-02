@@ -1,0 +1,14 @@
+on: 
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Run a script
+      run: echo "This is a scheduled workflow running every day at midnight!"

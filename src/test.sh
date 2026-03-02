@@ -1,10 +1,14 @@
 #!/bin/bash
 
-#sec/test.sh
-EXPECTED = "hello, test!"
+# sec/test.sh
 
+# Remove spaces around the = sign in Bash variable assignment
+EXPECTED="hello, test!"
+
+# Capture output from Node.js
 OUTPUT=$(node -e "console.log(require('./src/app')('test'))")
 
+# Compare values
 if [ "$OUTPUT" = "$EXPECTED" ]; then
     echo "Test passed!"
     exit 0

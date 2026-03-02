@@ -1,0 +1,14 @@
+name: FristWOrkflow 
+
+on: 
+  push: 
+    branches:
+      - main 
+
+jobs:
+  example-jop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print A Welcome Message! 
+        run: echo "Welcome To gitHubActions file" 

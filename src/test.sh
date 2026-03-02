@@ -3,7 +3,7 @@
 # sec/test.sh
 
 # Remove spaces around the = sign in Bash variable assignment
-EXPECTED="hello, test!"
+EXPECTED="Hello, test!"
 
 # Capture output from Node.js
 OUTPUT=$(node -e "console.log(require('./src/app')('test'))")

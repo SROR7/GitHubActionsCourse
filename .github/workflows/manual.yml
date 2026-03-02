@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: deploy_application 
-        run: echo "Depoying from the manual file application!" 
+        run: echo "Depoying from the manual file application! from the ${{ inputs.enviroments }} enviroment" 

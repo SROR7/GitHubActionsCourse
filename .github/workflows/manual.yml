@@ -1,0 +1,18 @@
+on: 
+  workflow_dispatch:
+    inputs:
+      enviroments: 
+        required: true
+        description: "Choose the envairoment"
+        default: "staging"
+        type: choice
+        options:
+          - staging 
+          - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy_application 
+        run: echo "Depoying from the manual file application! from the ${{ inputs.enviroments }} enviroment" 

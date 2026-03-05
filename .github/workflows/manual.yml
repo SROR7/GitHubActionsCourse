@@ -1,0 +1,10 @@
+on: 
+  repository_dispatch:
+    types: [incident_report]
+
+jobs:
+  handling-incident:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print incident details 
+        run: echo"incident report" 

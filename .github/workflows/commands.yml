@@ -1,13 +1,11 @@
-on: 
+on:
   workflow_dispatch:
-
 jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - run: | 
+      - run: |
           deprecated=true
-          if [[ deprecated ]]; then 
-            echo"::warning::Depraceted function is found" 
+          if [[ deprecated ]]; then
+            echo "::warning::Deprecated function found" 
           fi
- 
